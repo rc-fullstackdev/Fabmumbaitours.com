@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/img/logo/fab-blue.png">
+    <title>FAB Mumbai Tours</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/booking.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Metro Shoping Plaza, Colaba,
+                        Mumbai</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 9930545963</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>fabmumbaitours@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://twitter.com/fabmumbaitours" target="_blank"><i
+                            class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61555847077219" target="_blank"><i
+                            class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i
+                            class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/fabmumbaitours/?hl=en" target="_blank"><i
+                            class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://www.youtube.com/@fabmumbaitours" target="_blank"><i
+                            class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><img src="../img/logo/fab-logo.png" class="my-logo me-3"></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <button class="currency-btn" type="button" id="convertCurrencyBtn">USD ($)</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Exploring mumbai with us.</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">Explore Mumbai: Where Every Street Tells a
+                            Story.</p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- call button start -->
+
+    <div class="call-button">
+        <a href="tel:+918857029127"><i class="fa fa-solid fa-phone"></i></a>
+    </div>
+
+    <!-- call button end -->
+
+    <!-- whats-button start -->
+
+    <div id="whatsapp-button" class="floating-button" onclick="openPanel()">
+        <i class="fab fa-brands fa-whatsapp fw-normal"></i>
+    </div>
+
+    <!-- WhatsApp Contact Panel -->
+    <div id="whatsapp-panel" class="contact-panel">
+        <div class="close-btn" onclick="closePanel()">&times;</div>
+        <div class="panel-header">
+            <p>Chat with us</p>
+            <P>Get in contact with our representatives</P>
+        </div>
+        <div class="contact-container">
+            <div class="contact-item" onclick="openWhatsApp(+918265025800)">
+                <img src="img/button/man-icon-png.png" alt="Contact 1">
+                <div class="contact-details">
+                    <p class="p-color">Fahim</p>
+                    <P>support</P>
+                </div>
+
+            </div>
+            <div class="contact-item" onclick="openWhatsApp(+918265025800)">
+                <img src="img/button/man-icon-png.png" alt="Contact 2">
+                <div class="contact-details">
+                    <p class="p-color">Bernice</p>
+                    <P>support</P>
+                    <!-- <p class="online-p">I'm online</p> -->
+                </div>
+            </div>
+            <div class="contact-item" onclick="openWhatsApp(+918265025800)">
+                <img src="img/button/man-icon-png.png" alt="Contact 3">
+                <div class="contact-details">
+                    <p class="p-color">mak</p>
+                    <P>support</P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- whats-button end -->
+
+<!-- boking section start -->
+
+<div class="main-container">
+    <div class="main-column">
+
+        <!-- Additional divs before sub-column -->
+        <div class="main-heading">
+            <h2>Bollywood Tour</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Andheri East, Mumbai - <a href="#">View on map</a></p>
+        </div>
+        <hr>
+        <div class="sort-info">
+            <p><i class="fas fa-users"></i> People: 15</p>
+            <p><i class="fas fa-child"></i> Min Age: 5+</p>
+            <p><i class="fas fa-car"></i> Pickup: Hotel pickup offered</p>
+            <p><i class="fas fa-plane"></i> Pickup: Airport</p>
+            <p><i class="fas fa-wifi"></i> Wifi Available</p>
+        </div>
+        <hr>
+        <div class="booking-description">
+            <h3>Description</h3>
+            <p>“Every day is a screenplay to your imagination, well-scripted one ventures high in real”</p>
+            <p>When it comes to Bollywood, we delve into the different world of imagination. The Bollywood industry
+                in present times too is offering employment to millions and offering the best entertainment to
+                billions. It is a different experience to know the minutest aspects closely. When you sign up for
+                Bollywood tour with us, professional tour guides give you immense knowledge of coordination,
+                technology, and other aspects. We respect the curiosity of knowing the Bollywood industry;
+                therefore, we even take you to places where commercial advertisements or movies are shot. In order
+                to book with us, you don’t need to have any big budgets; you can book with us at affordable prices.
+                The prime advantage of booking Bollywood tours with us is that we have good reach and touch with
+                ample of renowned directors that will enhance your experience and give you space to enjoy the
+                shooting calmly. In order to provide our extended solutions; we even arrange commuting facilities.
+            </p>
+        </div>
+
+        <hr>
+
+        <!-- Sub-column -->
+
+        <div class="sub-column">
+            <div class="sub-column-item">
+                <h3>Know before you go</h3>
+                <p>Duration: 3-5 hours</p>
+                <p>Mobile tickets accepted</p>
+                <p>Instant confirmation</p>
+                <h3>Cancellation policy</h3>
+                <p>For a full refund, cancel at least 24 hours in advance of the start date of the experience.</p>
+            </div>
+
+            <div class="sub-column-item">
+                <h3>Available languages</h3>
+                <p>English, Hindi, Marathi</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Important information</h2>
+        <div class="sub-column">
+            <div class="sub-column-item">
+                <h3>Inclusions</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Professional English speaking guide</li>
+                    <li><i class="fas fa-check"></i> All places entry fees</li>
+                    <li><i class="fas fa-check"></i> Hotel/Port pick up and drop off</li>
+                    <li><i class="fas fa-check"></i> Bottled water</li>
+                    <li><i class="fas fa-check"></i> Air-conditioned vehicle</li>
+                    <li><i class="fas fa-check"></i> Private transportation</li>
+                    <li><i class="fas fa-check"></i> WiFi on board</li>
+                </ul>
+            </div>
+            <div class="sub-column-item">
+                <h3>Price Excludes</h3>
+                <ul>
+                    <li><i class="fa-solid fa-xmark"></i> Food & Drinks</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="sub-column">
+            <div class="sub-column-item">
+                <h3>Departure details</h3>
+                <ul>
+                    <li>Traveller pickup is offered.</li>
+                    <li>Airports:</li>
+                    <li>Mumbai Airport, Maharashtra 400099, Mumbai India</li>
+                    <li>Ports:</li>
+                    <li>Mumbai international cruise terminal (Green Gate)</li>
+                    <li>Hotel pickup is offered. View the hotel list on our checkout page to see if yours is
+                        included among the pickup points.</li>
+                </ul>
+                <p>Returns to original departure point</p>
+            </div>
+            <div class="sub-column-item">
+                <h3>Additional information</h3>
+                <ul>
+                    <li>Confirmation will be received at the time of booking</li>
+                    <li>Not wheelchair accessible</li>
+                    <li>Near public transportation</li>
+                    <li>Infant seats available</li>
+                    <li>Most travelers can participate</li>
+                    <li>This is a private tour/activity. Only your group will participate</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-column">
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <div class="form-field">
+                <label id="tour-type" value="7000"><i class="fas fa-dollar-sign"></i> Tour price: 7000</label>
+            </div>
+            <div class="form-field">
+                <label for="number-of-people"><i class="fas fa-users"></i> Number of People:</label>
+                <input type="number" id="number-of-people" min="1" max="3" value="1">
+            </div>
+            <div class="form-field">
+                <label for="tour-date"><i class="far fa-calendar-alt"></i> Tour Date:</label>
+                <input type="date" id="tour-date" min="" onfocus="setMinDate()">
+            </div>
+            <div class="form-field">
+                <label for="total-cost"><i class="fas fa-dollar-sign"></i> Total Cost:</label>
+                <input id="total-cost" readonly>
+            </div>
+            <button id="registration-button" onclick="registerTour()">Register Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- boking section end -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="FAQ.html">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                   <p class="mb-2 footer-address"><i class="fa fa-map-marker-alt me-3"></i>
+                        Metro shopping plaza,
+                        1st floor, shop no. 241, opp.
+                        Delhi Darbar, near Regal
+                        Cinema,
+                        Colaba Causeway, Mumbai-400039
+                    </p>
+                    <p class="mb-2 phone"><i class="fa fa-phone-alt me-3"></i>+91 9930545963</p>
+                    <p class="mb-2 email"><i class="fa fa-envelope me-3"></i>fabmumbaitours@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://twitter.com/fabmumbaitours" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61555847077219" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/fabmumbaitours/?hl=en" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@fabmumbaitours" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="../img/gallery/img-2.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="../img/gallery/img-3.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="../img/gallery/img-4.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="../img/gallery/img-5.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="../img/gallery/img-6.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="../img/gallery/img-7.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">fabmumbaitours.com</a>, All Right Reserved.Designed By <a class="border-bottom" href="https://mujahedh.com">Mujahed H</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/tour-form.js"></script>
+
+</body>
+
+</html>

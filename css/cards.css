@@ -1,0 +1,120 @@
+/* Default styles for all devices */
+
+.card {
+  border-radius: 30px;
+  border-top-left-radius: 10px;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.card-text {
+  width: 250px;
+  height: 100px;
+  padding: 5px;
+  margin-top: -10px;
+  font-size: 18px;
+}
+
+.place {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.time {
+  font-size: 18px;
+}
+
+.card-text {
+  margin-top: 15px;
+  font-size: 19px;
+}
+
+.card-img-top {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.card-img-top img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 8px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.card-body {
+  padding: 30px;
+  margin-top: -100px;
+  border-top-left-radius: 40px;
+}
+
+.book-btn {
+  border-radius: 50px;
+  width: 120px;
+  background-color: #86B817;
+}
+
+.book-btn:hover {
+  background-color: white;
+  border: none;
+  color: #86B817;
+}
+
+h3,
+h5 {
+  color: #86B817;
+}
+
+.card-body i {
+  color: #86B817;
+}
+
+/* Media queries for different devices */
+
+/* Mobile devices */
+@media only screen and (max-width: 600px)
+{
+    .col 
+    {
+      width: 100%;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .col 
+    {
+      width: 50%;
+    }
+}
+
+/* Laptops and desktops */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .col 
+    {
+      width: 50%;
+    }
+}
+
+/* Large desktops and TVs */
+@media only screen and (min-width: 1024) and (max-width: 1223px) {
+  .col 
+    {
+      width: 33%;
+    }
+}
+
+@media only screen and (min-width: 1224px) and (max-width: 1600px) {
+  .col 
+    {
+      width: 33%;
+    }
+}

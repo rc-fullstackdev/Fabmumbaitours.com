@@ -1,0 +1,58 @@
+
+form
+{    
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background-color:#f9f6f2;
+}
+
+form input, label
+{
+    display: block;
+}
+
+.form-heading
+{
+    margin: auto;
+    padding: 20px 10px;
+}
+
+input
+{
+    border-radius: 25px;
+    border-width: 1px;
+}
+
+textarea
+{
+    height: 120px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+form button
+{
+    width: 25%;
+    height: 10%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+form label
+{
+    color: black;
+    margin-bottom: 5px;
+}
+
+form button:hover
+{
+    border: 1px solid black;
+    color: #a7f00a;
+    font-weight: bold;
+}
+

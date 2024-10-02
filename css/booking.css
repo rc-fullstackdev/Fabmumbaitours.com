@@ -1,0 +1,138 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color:#fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-column {
+    flex: 2;
+    padding: 20px;
+}
+
+.booking-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+.form-field label{
+    margin-bottom: 20px;
+}
+.form-field input{
+    margin-top: 10px;
+    height:3em;
+}
+.form-field i{
+    margin-right: 15px;
+    color: #4caf50;
+}
+
+.sort-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.booking-description,
+.sub-column-item,
+.form-field {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.booking-description p{
+    line-height: 1.6em;
+}
+
+.sort-info p,
+.sort-info h2 {
+    width: 100%;
+}
+
+.sub-column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-column-item {
+    margin-bottom: 20px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.second-column {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Added styling for icons */
+.additional-div i,
+.sub-column-item i {
+    margin-right: 10px;
+}
+
+/* Added styling for total cost input field */
+#total-cost {
+    width: calc(100% - 20px);
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7f0e8;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+/* Styled registration button */
+#registration-button {
+    padding: 15px;
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Added spacing between li and p tags */
+.sub-column-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sub-column-item ul li {
+    margin-bottom: 10px;
+}
+.sub-column-item ul li i {
+    color: #59c75d;
+}
+
+.sub-column-item p {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .second-column {
+        order: 3; /* Placing second column below main column */
+    }
+}
